@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background color */
+  margin: 0;
+  padding: 20px;
+  position: relative; /* Set the body element as the positioning context for pseudo-elements */
+}
+
+body::before {
+  content: "";
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5; /* Adjust the opacity value as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+
+#todo-container{
+    margin: 110px auto;
+    max-width: 380px;  
+
+  }
+  
+#todo-input{
+    margin-top: 160px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    height: 40px;
+  }
+#datetime-input{
+  height: 40px;
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+} 
+#add-btn{
+    display: block;
+    background-color: #228f24;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+#add-btn:hover{
+    background-color: #bed13e;
+  }
+  
+#todo-list{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.todo-item{
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+.todo-item input[type="checkbox"]{
+    margin-right: 10px;
+  }
+
+.todo-item .datetime{
+    margin-left: auto;
+    
+  }
+
+  
+  
